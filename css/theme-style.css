@@ -6,7 +6,9 @@ font-family: 'Roboto Mono', monospace;
 
 body {
   font-family: Roboto;
+  background-color: #F3F5F4
 }
+
 /*==========================================
 *** SHELL STYLES ***
 ==========================================*/
@@ -98,7 +100,7 @@ b {
 
 .sidenav {
     height: 100%;
-    width: 301px;
+    width: 291px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -106,6 +108,7 @@ b {
     background-color: #2f3b4c;
     overflow-x: hidden;
     padding-top: 20px;
+
 }
 
 .sidenav a {
@@ -113,6 +116,7 @@ b {
     text-decoration: none;
     font-size: 19px;
     line-height: 21px;
+    font-weight: 400;
     color: #b0bbc0;
     display: block;
 }
@@ -126,6 +130,7 @@ b {
     margin-left: 291px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
+
 }
 
 .sidenav a:focus,
@@ -133,9 +138,9 @@ b {
 .sidenav a:active,
 .sidenav a:active:focus,
 .sidenav a:active:hover {
-  border-left: 3px solid #00bfe8;
+  border-left: 5px solid #00bfe8;
   color: #f1f1f1;
-  background-color: #2a3344;
+  background-color: #364155;
 }
 
 .hrline {
@@ -145,6 +150,7 @@ b {
 }
 
 /* Fixed side bar ENB */
+
 
 
 .dogovor {
@@ -164,7 +170,7 @@ b {
 }
 
 .alert-danger {
-  background-color: #e10404;
+  background-color: #cf0303;
   color: #FFF;
   font-family: Roboto;
   font-size: 17px;
@@ -175,6 +181,15 @@ b {
   background-color: #f8f8f8;
 }
 
+.falidogovor {
+  font-size: 15px;
+  text-align: left !important;
+}
+
+.falilicna {
+  font-size: 15px;
+  text-align: left !important;
+}
 
 /*==========================================
 *** END ***
