@@ -1,19 +1,12 @@
 /*==========================================
 *** HTML TAG STYLES ***
 ==========================================*/
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-  position: relative;
-  overflow-x: hidden !important;
-  color: #393944;
-  background-color: #f7f7f7;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
 
+body {
+  font-family: Roboto;
+}
 /*==========================================
 *** SHELL STYLES ***
 ==========================================*/
@@ -61,67 +54,6 @@ b {
   font-weight: bold;
 }
 
-/*==========================================
-*** BUTTON STYLE  START ***
-==========================================*/
-
-.btn {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  padding: 6px 20px;
-  text-decoration: none;
-  color: #FFFFFF;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #006e96;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  text-shadow: none;
-  text-transform: normal;
-  border: 1px solid #006e96;
-  text-align: center;
-  position: relative;
-}
-
-.btn:hover {
-  opacity: 1;
-  color: #FFF;
-  background-color: #026589;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border-color: #026589;
-}
-
-.btn.focus,
-.btn:focus {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-.btn.btn-lg {
-  font-size: 20px;
-  line-height: 22px;
-  padding: 13px 25px;
-  width: auto;
-  background-color: #0093c8;
-  border-color: #0093c8;
-}
-
-.btn.btn-lg:hover {
-  background-color: #008bbd;
-  border-color: #008bbd;
-}
-
-
-/*==========================================
-*** BUTTON STYLE END ***
-==========================================*/
-
 .has-dark-overlay {
   -webkit-transition: background-color 600ms ease-in-out;
   -moz-transition: background-color 600ms ease-in-out;
@@ -134,6 +66,10 @@ b {
 .has-dark-overlay:hover {
   background-color: rgba(51, 51, 51, .60);
 }
+
+/*=========================================
+    *** @media files ***
+=========================================*/
 
 @media (min-width: 1200px) {
   .container {
@@ -150,11 +86,49 @@ b {
   }
 }
 
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
 /*==========================================
 *** START ***
 ==========================================*/
 
+/* Fixed Side Bar */
 
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+
+
+/* Fixed side bar ENB */
 
 
 
