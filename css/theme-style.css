@@ -121,7 +121,7 @@ b {
     color: #f1f1f1;
 }
 
-.main {
+.main1 {
     margin-top: 101px;
     margin-left: 291px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
@@ -145,6 +145,34 @@ b {
   margin-top: 15%;
   color: #b0bbc0;
   border-bottom: 2px solid #b0bbc0;
+}
+
+.dogovor {
+  font-size: 15px;
+}
+
+.kniski {
+  font-size: 15px;
+}
+
+.tabla1 {
+  cursor: pointer;
+}
+
+.tabla2 {
+  cursor: pointer;
+}
+
+.alert-danger {
+  background-color: #e10404;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 17px;
+  line-height: 21px;
+  }
+
+.naslov {
+  background-color: #f8f8f8;
 }
 
 
