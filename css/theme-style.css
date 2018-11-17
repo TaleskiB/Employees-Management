@@ -1,0 +1,189 @@
+/*==========================================
+*** HTML TAG STYLES ***
+==========================================*/
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  position: relative;
+  overflow-x: hidden !important;
+  color: #393944;
+  background-color: #f7f7f7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*==========================================
+*** SHELL STYLES ***
+==========================================*/
+a {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  text-decoration: none;
+  color: #393944;
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #393944;
+}
+
+button {
+  border: none;
+  outline: none !important;
+}
+
+.image-auto {
+  width: auto;
+  max-width: 100%;
+}
+
+.image-full {
+  width: 100%;
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+/*==========================================
+*** BUTTON STYLE  START ***
+==========================================*/
+
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 6px 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #006e96;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  text-transform: normal;
+  border: 1px solid #006e96;
+  text-align: center;
+  position: relative;
+}
+
+.btn:hover {
+  opacity: 1;
+  color: #FFF;
+  background-color: #026589;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #026589;
+}
+
+.btn.focus,
+.btn:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn.btn-lg {
+  font-size: 20px;
+  line-height: 22px;
+  padding: 13px 25px;
+  width: auto;
+  background-color: #0093c8;
+  border-color: #0093c8;
+}
+
+.btn.btn-lg:hover {
+  background-color: #008bbd;
+  border-color: #008bbd;
+}
+
+
+/*==========================================
+*** BUTTON STYLE END ***
+==========================================*/
+
+.has-dark-overlay {
+  -webkit-transition: background-color 600ms ease-in-out;
+  -moz-transition: background-color 600ms ease-in-out;
+  -o-transition: background-color 600ms ease-in-out;
+  transition: background-color 600ms ease-in-out;
+  background-color: rgba(51, 51, 51, .50);
+  background-blend-mode: overlay;
+}
+
+.has-dark-overlay:hover {
+  background-color: rgba(51, 51, 51, .60);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 990px;
+    position: relative;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1592px;
+    position: relative;
+  }
+}
+
+/*==========================================
+*** START ***
+==========================================*/
+
+
+
+
+
+
+/*==========================================
+*** END ***
+==========================================*/
+
+/* responsive css */
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575.98px) {
+  .feature-single.flip {
+    min-height: 580px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {}
