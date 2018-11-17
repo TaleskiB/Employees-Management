@@ -128,8 +128,6 @@ b {
     padding: 0px 10px;
 }
 
-/* Fixed side bar ENB */
-
 .sidenav a:focus,
 .sidenav a:hover,
 .sidenav a:active,
@@ -140,12 +138,14 @@ b {
   background-color: #2a3344;
 }
 
-
 .hrline {
   margin-top: 15%;
   color: #b0bbc0;
   border-bottom: 2px solid #b0bbc0;
 }
+
+/* Fixed side bar ENB */
+
 
 .dogovor {
   font-size: 15px;
