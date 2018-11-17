@@ -7,112 +7,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- FAVICON for Tab -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/theme-style.css">
+  <link rel="stylesheet" href="css/login-style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
-  <title>Employee Management | Dashboard</title>
+  <title>GT | Employee Management</title>
 </head>
 
 <body>
 
-<!-- Fixed Side Bar -->
-  <div class="container">
+  <div class="container-fluid loginpage">
     <div class="row">
-      <div class="col-5 col-lg-5 col-sm-5 pt-15 pr-8 pb-6 pl-21 sidenav">
-        <img class="img-fluid mt-4 ml-2" src="images/avatar.png" class="float-left" alt="#" width="65" height="65">
-          <hr class="hrline"/>
-            <a href="#dashboard" class="mt-5 py-3 pl-4"><i class="fas fa-home"></i> Контролна Табла</a>
-              <a href="#employees" class="mt-1 py-3 pl-4"><i class="fas fa-users"></i> Вработени</a>
-                <a href="#docs" class="mt-1 py-3 pl-4"><i class="fas fa-file-alt"></i> Документи</a>
-                  <a href="#switchcompany" class="mt-1 py-3 pl-4"><i class="fas fa-sync-alt"></i> Промени Компанија</a>
-                    </div>
-                      </div>
-                        </div>
-  <!-- Fixed Side Bar END -->
+      <div class="col-sm-9 col-md-7 col-lg-3 mx-auto d-block">
 
-   <div class="container main1">
-     <div class="row row1">
+        <img class="center-logo mx-auto d-block text-center logoto pb-2 pt-5" src="images/logo-gt.png" />
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Логирај се</h5>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputEmail">Е-маил</label>
+              </div>
 
-  <!-- Table 1 - Istek na Dogovor -->
-        <div class="col-md-4 col-md-8 col-xl-4 text-center ml-sm-2 ml-md-5 ml-lg-5 mt-5 dogovor">
-          <div class="alert alert-danger mb-0"><strong>Истек на Договор:</strong></div>
-            <table class="table table-bordered table-hover">
-              <thead>
-                <tr class="naslov">
-                  <th>Име и Презиме</th>
-                    <th>Завршува на:</th>
-                      </tr>
-                        </thead>
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Лозинка</label>
+              </div>
 
-                          <tbody class="tabla1">
-                            <tr>
-                              <td>Бобан Богдановски</td>
-                                <td>31/11/2019</td>
-                                  </tr>
-
-                                      <tr>
-                                        <td>Марија Гацовска</td>
-                                          <td>31/11/2019</td>
-                                            </tr>
-
-                                                <tr>
-                                                  <td>Христина Кочанковска</td>
-                                                    <td>31/11/2019</td>
-                                                      </tr>
-
-                                                        </tbody>
-                                                          </table>
-                                                            </div>
-
- <!-- Table 2 - Istek na Sanitarni Kniski -->
-
-<div class="col-md-4 col-md-8 col-xl-4 text-center ml-sm-2 ml-md-5 ml-lg-5 mt-5 kniski">
-  <div class="alert alert-danger mb-0"><strong>Истек на Санитарни Книшки:</strong></div>
-    <table class="table table-bordered table-hover">
-      <thead>
-        <tr class="naslov">
-          <th>Име и Презиме</th>
-            <th>Завршува на:</th>
-               </tr>
-                  </thead>
-
-                      <tbody class="tabla2">
-                        <tr>
-                          <td>John Doe</td>
-                            <td>31/11/2019</td>
-                              </tr>
-
-                                <tr>
-                                  <td>Mary Moe</td>
-                                    <td>31/11/2019</td>
-                                      </tr>
-
-                                         <tr>
-                                           <td>July Dooley</td>
-                                             <td>31/11/2019</td>
-                                               </tr>
-
-                                                    </tbody>
-                                                      </table>
-                                                        </div>
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Зачувај ја Лозинката</label>
+              </div>
+              <a href="dash.html" class="btn btn-lg btn-block btn-primary text-uppercase" role="button">Логирај се</a>
+              <hr class="my-4">
+              </form>
+          </div>
+        </div>
+        <h2 class="text-center py-5 mr-5 title2" style="color: white"><a href="http://10.91.162.141/bale/" target="_blank">Created by <<strong style="color: red">/</strong>taleski></a></h2>
+      </div>
+    </div>
+  </div>
 
 
-
-
-</div>
-</div>
-
-
-
-
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JSs -->
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/theme-script.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JSs -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/theme-script.js"></script>
 
 </body>
 
