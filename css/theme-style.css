@@ -98,21 +98,22 @@ b {
 
 .sidenav {
     height: 100%;
-    width: 160px;
+    width: 301px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #2f3b4c;
     overflow-x: hidden;
     padding-top: 20px;
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 19px;
+    line-height: 21px;
+    color: #b0bbc0;
     display: block;
 }
 
@@ -121,16 +122,30 @@ b {
 }
 
 .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
+    margin-top: 101px;
+    margin-left: 291px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
 }
 
-
-
 /* Fixed side bar ENB */
 
+.sidenav a:focus,
+.sidenav a:hover,
+.sidenav a:active,
+.sidenav a:active:focus,
+.sidenav a:active:hover {
+  border-left: 3px solid #00bfe8;
+  color: #f1f1f1;
+  background-color: #2a3344;
+}
 
+
+.hrline {
+  margin-top: 15%;
+  color: #b0bbc0;
+  border-bottom: 2px solid #b0bbc0;
+}
 
 
 /*==========================================
