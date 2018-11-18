@@ -191,6 +191,22 @@ b {
   text-align: left !important;
 }
 
+.bale {
+  border: 3px solid #000;
+}
+
+.form-group .filestyle {
+  margin-left: 50px !important;
+}
+
+.docupload {
+  border: 5px solid #000;
+}
+
+.customFile {
+  width: 100%!important;
+}
+
 /*==========================================
 *** END ***
 ==========================================*/

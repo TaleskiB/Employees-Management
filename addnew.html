@@ -15,51 +15,295 @@
 
 <body>
 
-<!-- Fixed Side Bar -->
-            <div class="container">
-              <div class="row">
-                <div class="col-5 col-lg-5 col-sm-5 pt-15 pr-8 pb-6 pl-21 sidenav">
-                  <img class="img-fluid mt-4 ml-2" src="images/avatar.png" class="float-left" alt="#" width="65" height="65" />
-                    <hr class="hrline"/>
+  <!--- Fixed Side Bar --->
+  <div class="container">
+    <div class="row">
+      <div class="col-5 col-lg-5 col-sm-5 pt-15 pr-8 pb-6 pl-21 sidenav">
+        <img class="img-fluid mt-4 ml-2" src="images/avatar.png" class="float-left" alt="#" width="65" height="65" />
+        <hr class="hrline" />
 
-                    <ul class="list-unstyled">
-                      <li class="py-2">
-                        <a href="dash.html" class="active mt-5 py-3 pl-4"><i class="fas fa-home"></i> Контролна Табла</a>
-                          </li>
+        <ul class="list-unstyled">
+          <li class="py-2">
+            <a href="dash.html" class="active mt-5 py-3 pl-4"><i class="fas fa-home"></i> Контролна Табла</a>
+          </li>
 
-                      <li class="py-1" data-toggle="collapse">
-                        <a href="#employees" class="mt-1 py-3 pl-4" data-toggle="collapse"><i class="fas fa-users"></i> Вработени</a>
-                          <div id="employees" class="collapse">
-                            <a href="#employees" class="mt-1 py-3 pl-4"><i class="fas fa-user-plus"></i> Додади Нов</a>
-                              <a href="#employees" class="mt-1 py-3 pl-4"><i class="fas fa-user-times"></i> Избриши</a>
-                                </div>
-                                  </li>
+          <li class="py-1" data-toggle="collapse">
+            <a href="#employees" class="mt-1 py-3 pl-4" data-toggle="collapse"><i class="fas fa-users"></i> Вработени</a>
+            <div id="employees" class="collapse">
+              <a href="#employees" class="mt-1 py-3 pl-4"><i class="fas fa-user-plus"></i> Додади Нов</a>
+              <a href="#employees" class="mt-1 py-3 pl-4"><i class="fas fa-user-times"></i> Избриши</a>
+            </div>
+          </li>
 
-                          <li class="py-1" data-toggle="collapse">
-                            <a href="#docs" class="mt-1 py-3 pl-4" data-toggle="collapse"><i class="fas fa-file-alt"></i> Документи</a>
-                              <div id="docs" class="collapse">
-                                <a href="#docs" class="mt-1 py-3 pl-4" data-toggle="collapse"><i class="fas fa-file"></i> Изводи</a>
-                                  <a href="#docs" class="mt-1 py-3 pl-4" data-toggle="collapse"><i class="fas fa-file-invoice-dollar"></i> Фактури</a>
-                                    </li>
+          <li class="py-1" data-toggle="collapse">
+            <a href="#docs" class="mt-1 py-3 pl-4" data-toggle="collapse"><i class="fas fa-file-alt"></i> Документи</a>
+            <div id="docs" class="collapse">
+              <a href="#docs" class="mt-1 py-3 pl-4" data-toggle="collapse"><i class="fas fa-file"></i> Изводи</a>
+              <a href="#docs" class="mt-1 py-3 pl-4" data-toggle="collapse"><i class="fas fa-file-invoice-dollar"></i> Фактури</a>
+          </li>
 
-                            <li class="pt-1 pb-5" data-toggle="collapse">
-                              <a href="#switchcompany" class="mt-1 py-3 pl-4" data-toggle="collapse"><i class="far fa-building"></i> Промени Компанија</a>
-                                <div id="switchcompany" class="collapse">
-                                  <a href="#employees" class="mt-1 py-3 pl-4"><i class="fas fa-building"></i> Г-Т Компани Дооел</a>
-                                    <a href="#employees" class="mt-1 py-3 pl-4"><i class="far fa-building"></i> Вер Деј Доо</a>
-                                      </div>
-                                        </li>
+          <li class="pt-1 pb-5" data-toggle="collapse">
+            <a href="#switchcompany" class="mt-1 py-3 pl-4" data-toggle="collapse"><i class="far fa-building"></i> Промени Компанија</a>
+            <div id="switchcompany" class="collapse">
+              <a href="#employees" class="mt-1 py-3 pl-4"><i class="fas fa-building"></i> Г-Т Компани Дооел</a>
+              <a href="#employees" class="mt-1 py-3 pl-4"><i class="far fa-building"></i> Вер Деј Доо</a>
+            </div>
+          </li>
 
-                              <a href="index.html" class="btn btn-danger odjavise mt-5" role="button">Одјави се</a>
-                                </ul>
-                                  </div>
-                                    </div>
-                                      </div>
-  <!-- Fixed Side Bar END -->
-
-
+          <a href="index.html" class="btn btn-danger odjavise mt-5" role="button">Одјави се</a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--- Fixed Side Bar END --->
 
 
+
+  <!--- ADD NEW USER FORMS --->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 ">
+      </div>
+
+
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="text-center">Додади Нов Вработен</h4>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="text-center">
+                  <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+                  <h6>Прикачи слика</h6>
+                  <input type="file" class="text-center center-block file-upload">
+                </div>
+                </hr><br>
+                <form>
+
+                  <div class="form-group row">
+                    <label for="name" class="col-4 col-form-label">Име*</label>
+                    <div class="col-8">
+                      <input id="name" name="name" placeholder="Име" class="form-control here" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="lastname" class="col-4 col-form-label">Презиме*</label>
+                    <div class="col-8">
+                      <input id="lastname" name="lastname" placeholder="Презиме" class="form-control here" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="dob" class="col-4 col-form-label">Дата на Раѓање*</label>
+                    <div class="col-8">
+                      <input type="date" class="form-control" id="dob" placeholder="Дата на Раѓање" class="form-control here" format="DD/MM/YYYY">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="embg" class="col-4 col-form-label">ЕМБГ</label>
+                    <div class="col-8">
+                      <input id="embg" name="embg" placeholder="ЕМБГ" class="form-control here" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="address" class="col-4 col-form-label">Адреса</label>
+                    <div class="col-8">
+                      <input id="address" name="address" placeholder="Адреса" class="form-control here" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="city" class="col-4 col-form-label">Град</label>
+                    <div class="col-8">
+                      <input id="city" name="city" placeholder="Град" class="form-control here" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="mobile" class="col-4 col-form-label">Мобилен</label>
+                    <div class="col-8">
+                      <input id="mobile" name="mobile" placeholder="Мобилен" class="form-control here" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="email" class="col-4 col-form-label">Е-маил*</label>
+                    <div class="col-8">
+                      <input id="email" name="email" placeholder="Е-маил" class="form-control here" required="required" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="workplace" class="col-4 col-form-label">Место на Работа*</label>
+                    <div class="col-8">
+                      <select id="workplace" name="workplace" class="custom-select">
+                        <option value="admin">Кафич ГТ-1 - Широк Сокак бр. 55</option>
+                        <option value="admin">Кафич ГТ-2 - Широк Сокак бр. 94</option>
+                        <option value="admin">Ланч Бар ГТ - Широк Сокак бр. 55</option>
+                        <option value="admin">Главен Магацин - Боримечка</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="position" class="col-4 col-form-label">Работно Место*</label>
+                    <div class="col-8">
+                      <select id="position" name="position" class="custom-select">
+                        <option value="admin">Келнер</option>
+                        <option value="admin">Шанкер</option>
+                        <option value="admin">Колачи</option>
+                        <option value="admin">Сладолед</option>
+                        <option value="admin">Производство Сладолед</option>
+                        <option value="admin">Производство Торти</option>
+                        <option value="admin">Кувар</option>
+                        <option value="admin">Помошник Кувар</option>
+                        <option value="admin">Салатер</option>
+                        <option value="admin">Пицер</option>
+                        <option value="admin">Менаџер</option>
+                        <option value="admin">Книговодител</option>
+                        <option value="admin">Хигиеничар</option>
+                        <option value="admin">Стражар</option>
+                        <option value="admin">Магационер</option>
+                        <option value="admin">Шофер</option>
+                        <option value="admin">Дистрибутер</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="date" class="col-4 col-form-label">Дата на Почнување на Работа*</label>
+                    <div class="col-8">
+                      <input type="date" class="form-control" id="dob" placeholder="Дата на Почнување на Работа" class="form-control here" format="DD/MM/YYYY">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="date" class="col-4 col-form-label">Договор за Работа ОД*</label>
+                    <div class="col-8">
+                      <input type="date" class="form-control" id="dob" placeholder="Договор за Работа ОД" class="form-control here" format="DD/MM/YYYY">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="date" class="col-4 col-form-label">Договор за Работа ДО*</label>
+                    <div class="col-8">
+                      <input type="date" class="form-control" id="dob" placeholder="Договор за Работа ДО" class="form-control here" format="DD/MM/YYYY">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="customFile" class="col-4 col-form-label">Договор за работа - upload</label>
+                    <div class="col-8">
+                      <input id="customFile" name="customFile" placeholder="Договор за работа - upload" class="customFile" class="form-control here docupload" type="file" style="border: 1px solid #CED4DA!important;">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="customFile" class="col-4 col-form-label">Лична Карта - upload</label>
+                    <div class="col-8">
+                      <input id="customFile" name="customFile" placeholder="Лична Карта - upload" class="customFile" class="form-control here docupload" type="file" style="border: 1px solid #CED4DA!important;">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="date" class="col-4 col-form-label">Санитарна Книшка - Важи ОД</label>
+                    <div class="col-8">
+                      <input type="date" class="form-control" id="dob" placeholder="Санитарна Книшка - Важи ОД" class="form-control here" format="DD/MM/YYYY">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="date" class="col-4 col-form-label">Санитарна Книшка - Важи ДО</label>
+                    <div class="col-8">
+                      <input type="date" class="form-control" id="dob" placeholder="Санитарна Книшка - Важи ДО" class="form-control here" format="DD/MM/YYYY">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="bank-acc" class="col-4 col-form-label">Трансакциска Сметка</label>
+                    <div class="col-8">
+                      <input id="bank-acc" name="bank-acc" placeholder="Трансакциска Сметка" class="form-control here" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="bank" class="col-4 col-form-label">Банка</label>
+                    <div class="col-8">
+                      <input id="bank" name="bank" placeholder="Банка" class="form-control here" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="workpass" class="col-4 col-form-label">Шифра за работа</label>
+                    <div class="col-8">
+                      <input id="workpass" name="workpass" placeholder="Шифра за работа" class="form-control here" type="text">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="gender" class="col-4 col-form-label">Пол*</label>
+                    <div class="col-8">
+                      <select id="gender" name="gender" class="custom-select">
+                        <option value="admin">Машко</option>
+                        <option value="admin">Женско</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="customFile" class="col-4 col-form-label">Одлука за одмор - upload</label>
+                    <div class="col-8">
+                      <input id="customFile" name="customFile" placeholder="Одлука за одмор - upload" class="customFile" class="form-control here docupload" type="file" style="border: 1px solid #CED4DA!important;">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="bloodtype" class="col-4 col-form-label">Крвна Група</label>
+                    <div class="col-8">
+                      <select id="bloodtype" name="bloodtype" class="custom-select">
+                        <option value="admin">A+</option>
+                        <option value="admin">A-</option>
+                        <option value="admin">B+</option>
+                        <option value="admin">B-</option>
+                        <option value="admin">O+</option>
+                        <option value="admin">O-</option>
+                        <option value="admin">AB+</option>
+                        <option value="admin">AB-</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="notes" class="col-4 col-form-label">Забелешки</label>
+                    <div class="col-8">
+                      <textarea id="notes" name="notes" cols="40" rows="4" placeholder="Забелешки" class="form-control"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="offset-4 col-8">
+                      <button name="submit" type="submit" class="btn btn-primary">Update My Profile</button>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
